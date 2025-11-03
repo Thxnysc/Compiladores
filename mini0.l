@@ -1,12 +1,11 @@
 %option noyywrap
 
 %{
-/* ==== CONFIGURACIÓN COMPLETA PARA WINDOWS ==== */
+
 #define YY_NO_UNISTD_H
 #define YY_NO_INPUT
 #define YY_NO_OUTPUT
 
-/* Solución definitiva: declarar funciones POSIX faltantes */
 #ifndef fileno
 #define fileno(f) _fileno(f)
 #endif
